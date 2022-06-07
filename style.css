@@ -15,7 +15,7 @@
     transition: 2s;
 }
 
-.ex-2-square:hover{
+.ex-2-square:active{
     width:100%;
 }
 .ex-3-square {
@@ -55,16 +55,77 @@
     width: 500px;
 }
 
+.ex-6-img:hover {
+    filter:grayscale(100%)
+}
+
+.ex-7-img {
+    transition: 5s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%) blur(5px);
+}
+
+.ex-8-img:hover {
+    filter: grayscale(100%) blur(5px);
+    border-radius: 30px;
+}
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+.ex-9-img:hover {
+    filter: grayscale(100%) blur(3px);
+    border-radius: 30px;
+    transform: scale(0.2);
+}
 .ex-10-icon {
     font-size: 60px;
+    animation: ruota 5s infinite linear;
+}
+
+@keyframes ruota {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .ex-11-icon {
     font-size: 60px;
+    animation: ruota-metà 2s linear;
 }
+
+@keyframes ruota-metà {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -93,4 +154,13 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: biancosup 5s linear infinite;
+    animation: biancoinf 5s linear infinite;
+}
+
+@keyframes biancosup{
+
 }

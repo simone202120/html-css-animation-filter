@@ -157,10 +157,88 @@
 }
 
 .ex-12-button:hover .ex-12-top-white {
-    animation: biancosup 5s linear infinite;
-    animation: biancoinf 5s linear infinite;
+    animation: biancosup 1s linear infinite;
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: biancoinf 1s linear infinite;
 }
 
-@keyframes biancosup{
+@keyframes biancosup {
+   
+    50% {
+        left: calc(100% - 50px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+@keyframes biancoinf{
+    50% {
+        right: calc(100% - 50px);
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: bianco1 5s linear infinite;
+}
+@keyframes bianco1 {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    32% {
+        left: 90%;
+        top: -10px;
+    }
+    42% {
+        top: 60px;
+        left: 90%;
+    }
+    82% {
+        left: -10;
+        top: 60px;
+    }
+    92% {
+        left: -10%;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bianco2 5s linear infinite;
+}
+@keyframes bianco2 {
+0% {
+    right: 10%;
+    bottom: -10px;
+}
+32% {
+    right: 80%;
+    bottom: -10px;
+}
+42% {
+    bottom: 60px;
+    right: 80%;
+}
+82% {
+    right: -10;
+    bottom: 60px;
+}
+92% {
+    right: -10%;
+    bottom: -10px;
+}
+100% {
+    right: 20%;
+    bottom: -10px;
+}
 
 }
+
+
